@@ -28,14 +28,21 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
   </div>
+  <input type="text" v-model="hoge">
+  <div>{{ hoge }}</div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
+    msg: String,
+  },
+  data: () => {
+    return {
+      hoge: 'hoge'
+    }
+  },
 }
 </script>
 
